@@ -143,6 +143,7 @@ public class Employee {
                             System.out.println (p);
                         }
                     }
+                    break;
             }
         }
     }
