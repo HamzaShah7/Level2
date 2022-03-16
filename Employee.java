@@ -86,7 +86,7 @@ public class Employee {
                 letter = 1;
             }
             else {
-                System.out.print ("Enter 1 to Add New Employee\nEnter 2 to Add $10 to Salary \nEnter 3 to Add $5 to Salary ");
+                System.out.print ("Enter 0 to Exit\nEnter 1 to Add New Employee\nEnter 2 to Add $10 to Salary \nEnter 3 to Add $5 to Salary\nEnter 4 to Show Employee Details. ");
                 letter = sc.nextInt ();
             }
             switch (letter){
@@ -135,10 +135,15 @@ public class Employee {
                     else {
                         System.out.println ("Your List is empty.");
                     }
-                    break;
-
+                case 4:
+                    System.out.print ("Enter Your ID: ");
+                    int S = sc.nextInt ();
+                    for (Employee p : employees){
+                        if (S==p.ID){
+                            System.out.println (p);
+                        }
+                    }
             }
-
         }
     }
 }
