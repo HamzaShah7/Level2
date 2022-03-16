@@ -135,6 +135,7 @@ public class Employee {
                     else {
                         System.out.println ("Your List is empty.");
                     }
+                    break;
 
             }
 
